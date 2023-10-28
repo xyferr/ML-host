@@ -21,7 +21,7 @@ client_credentials_manager = SpotifyClientCredentials(client_id=CLIENT_ID, clien
 sp = spotipy.Spotify(client_credentials_manager=client_credentials_manager)
 
 # Our dataframe
-sdf = pd.read_csv(r"C:\Users\pc\Downloads\ML-ROHIT\BD-proj\SOng-web\SongWebsite\ML files\CSV_files\SpotifySongs.csv")
+sdf = pd.read_csv(r"CSV_files\SpotifySongs.csv")
 
 # selects only the numeric coloumns in our dataframe
 num_sdf = sdf.select_dtypes(include=['int16', 'int32', 'int64', 'float16', 'float32', 'float64'])

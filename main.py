@@ -12,7 +12,7 @@ class item(BaseModel):
     
 app = FastAPI()
 
-sdf = pd.read_csv(r"..\ML files\CSV_files\SpotifySongs.csv")
+sdf = pd.read_csv(r"CSV_files\SpotifySongs.csv")
 recommendations = Spotify_Recommendation(sdf)
 
 
