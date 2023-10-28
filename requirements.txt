@@ -1,6 +1,5 @@
 fastapi
 pydantic
-json
 numpy
 pandas
 seaborn
