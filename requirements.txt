@@ -6,4 +6,5 @@ seaborn
 tqdm        
 scikit-learn
 spotipy
+uvicorn
                           
