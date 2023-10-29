@@ -1,4 +1,0 @@
-services:
-  - name: fastapi
-    buildCommand: python -m uvicorn main:app 
-    env: python=3.9
