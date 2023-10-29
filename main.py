@@ -13,7 +13,9 @@ app = FastAPI()
 
 sdf = pd.read_csv("SpotifySongs.csv")
 recommendations = Spotify_Recommendation(sdf)
-
+@app.get('/')
+def com():
+    return "working"
 @app.post('/recommend')
 def rec(song_request: SongRequest):
     song_name = song_request.s_name
